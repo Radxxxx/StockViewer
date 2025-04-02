@@ -7,12 +7,12 @@ body {
     align-items: center;
     height: 100vh;
     text-align: center;
-    overflow: hidden; /* 🔹 Evita scroll strani */
+    overflow: hidden; /* Evita scroll */
 }
 
 .container {
     width: 90%;
-    max-width: 900px; /* 🔹 Più largo per desktop */
+    max-width: 900px; /* Più largo per desktop */
     background: rgba(255, 255, 255, 0.05);
     padding: 20px;
     border-radius: 15px;
@@ -27,8 +27,8 @@ canvas {
     background: #121212;
     padding: 10px;
     border-radius: 10px;
-    max-width: 800px; /* 🔹 Mantiene larghezza decente */
-    height: 400px !important; /* 🔹 Evita stretch verticale */
+    max-width: 800px; /* Mantiene larghezza */
+    height: 400px !important; /* Evita stretch verticale */
 }
 
 .buttons {

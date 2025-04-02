@@ -20,7 +20,7 @@ async function fetchStockData(symbol) {
         updateStockInfo(symbol, prices[prices.length - 1]);
         updateChart(timestamps, prices);
     } catch (error) {
-        console.error("❌ Errore nel recupero dati:", error);
+        console.error("Errore nel recupero dati:", error);
         document.getElementById("stock-price").innerText = "Errore nel caricamento";
     }
 }
