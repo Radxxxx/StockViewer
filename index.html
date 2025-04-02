@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@sgratzl/chartjs-chart-financial"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.3.0/build/global/luxon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon"></script>
+    
+
+    <title>Stock Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Azioni</h2>
+            <button onclick="fetchStockData('AAPL')">Apple</button>
+            <button onclick="fetchStockData('GOOGL')">Google</button>
+            <button onclick="fetchStockData('MSFT')">Microsoft</button>
+            <button onclick="fetchStockData('TSLA')">Tesla</button>
+        </aside>
+
+        <main class="content">
+            <div id="stock-info">
+                <h2 id="stock-name">Seleziona un'azione</h2>
+                <p id="stock-price">-</p>
+            </div>
+            <canvas id="stockChart"></canvas>
+        </main>
+    </div>
+</body>
+</html>
